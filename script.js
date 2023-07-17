@@ -1,4 +1,4 @@
-const SCROLL_THRESHOLD = 20; // Minimum scroll position to show the back-to-top button
+const SCROLL_THRESHOLD = 20;
 
 function toggleBackToTopButton() {
   const backToTopButton = document.getElementById("back-to-top-btn");
@@ -10,8 +10,8 @@ function toggleBackToTopButton() {
 }
 
 function scrollToTop() {
-  const scrollDuration = 500; // Duration of the scroll animation in milliseconds
-  const scrollStep = -window.scrollY / (scrollDuration / 15); // Calculation for smooth scrolling
+  const scrollDuration = 500;
+  const scrollStep = -window.scrollY / (scrollDuration / 15);
 
   function step() {
     if (window.scrollY > 0) {
