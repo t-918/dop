@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your description here">
+    <meta name="keywords" content="keyword1, keyword2, keyword3">
+    <meta name="author" content="TwilightRisu918">
+    <meta name="robots" content="index, follow">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="x-icon" href="https://i.imgur.com/7G15lkt.png">
+    <title>DOP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+   <main>
+    <div class="container">
+        <div class="discord_object_properties_intro">
+            <h1>Discord Object Properties <a href="https://docs.carl.gg/#/tagstriggers?id=discord-object-properties" target="_blank" rel="noopener" class="carl-bot-link">(Carl-Bot)</a></h1>
+            <p class="discord_object_properties_intro_p">In Discord, Object blocks encompass specific properties, and to retrieve a property of a Discord Object block, you simply indicate the property name as the block's parameter, such as <span class="discord_object_properties_intro_p_user_id">{user(id)}</span> or <span class="discord_object_properties_intro_p_server_owner">{server(owner)}</span>.</p>
+        </div>
+    
+        <div class="discord_object_properties">
+            <h1 class="discord_object_properties_category">{user} & {target}</h1>
+            <p class="discord_object_properties_content">
+                <span class="discord_object_properties_content_item">(avatar)</span>: a link to the user's avatar.<br><br>
+                <span class="discord_object_properties_content_item">(icon)</span>: the same as <span class="discord_object_properties_content_item">(avatar)</span>.<br><br>
+                <span class="discord_object_properties_content_item">(id)</span>: the user's Discord ID, a multi-digit number that is unique to that user.<br><br>
+                <span class="discord_object_properties_content_item">(mention)</span>: a string to mention the user.<br><br>
+                <span class="discord_object_properties_content_item">(created_at)</span>: outputs the date the account was created in the format yyyy-mm-dd HH:MM:SS.<br><br>
+                <span class="discord_object_properties_content_item">(joined_at)</span>: outputs the date the account joined the server in the format yyyy-mm-dd HH:MM:SS.<br><br>
+                <span class="discord_object_properties_content_item">(color)</span>: the hexadecimal color code relating to the user's highest non-default role color (preceding '#' included).<br><br>
+                <span class="discord_object_properties_content_item">(name)</span>: their Discord account username, not their nickname.<br><br>
+                <span class="discord_object_properties_content_item">(proper)</span>: their username followed by their discriminator. username#0001.<br><br>
+                <span class="discord_object_properties_content_item">(roleids)</span>: a list of the role IDs for every role the user has, listed from lowest in the hierarchy to highest.<br><br>
+                <span class="discord_object_properties_content_item">(position)</span>: their position in the role hierarchy. Position starts with 0 for <span class="discord_object_properties_content_item">@everyone</span> at the bottom and increases by 1 for each role in the server going upwards.
+            </p>            
+            <h1 class="discord_object_properties_category">{server}</h1>
+            <p class="discord_object_properties_content">
+                <span class="discord_object_properties_content_item">(icon)</span>: a link to the Server's icon.<br><br>
+                <span class="discord_object_properties_content_item">{id}</span>: the Server's ID.<br><br>
+                <span class="discord_object_properties_content_item">{owner}</span>: username#discrim format of the server owner.<br><br>
+                <span class="discord_object_properties_content_item">{random}</span>: username#discrim format of a random member of the server.<br><br>
+                <span class="discord_object_properties_content_item">{randomonline}</span>: username#discrim format of a random member who is online.<br><br>
+                <span class="discord_object_properties_content_item">{randomoffline}</span>: username#discrim format of a random member who is offline.<br><br>
+                <span class="discord_object_properties_content_item">{members}</span>: number of members in the server.<br><br>
+                <span class="discord_object_properties_content_item">{bots}</span>: number of bots in the server.<br><br>
+                <span class="discord_object_properties_content_item">{humans}</span>: number of humans in the server.<br><br>
+                <span class="discord_object_properties_content_item">{roles}</span>: number of roles in the server.<br><br>
+                <span class="discord_object_properties_content_item">{channels}</span>: number of channels in the server.<br><br>
+                <span class="discord_object_properties_content_item">{created_at}</span>: when the server was created in the format yyyy-mm-dd HH:MM:SS.
+            </p>                                      
+            <h1 class="discord_object_properties_category">{channel}</h1>
+            <p class="discord_object_properties_content">
+                <span class="discord_object_properties_content_item">{id}</span>: the channel's id.<br><br>
+                <span class="discord_object_properties_content_item">{topic}</span>: the channel's topic.<br><br>
+                <span class="discord_object_properties_content_item">{slowmode}</span>: the current slowmode delay.<br><br>
+                <span class="discord_object_properties_content_item">{position}</span>: the channel's position. This is the order in which the channels were created, 0 being the first channel in the server.<br><br>
+                <span class="discord_object_properties_content_item">{mention}</span>: clickable link to the channel.
+            </p>                                                   
+        </div>
+
+        <div class="c">
+            <p>Copyright Disclaimer under Section 107 of the Copyright Act of 1976, allows for fair use of copyrighted material for specific purposes including criticism, commentary, news reporting, scholarly research, and educational endeavors. Fair use constitutes a limited, authorized use of copyrighted content that might otherwise be considered an infringement. Non-profit, educational, or personal usage of copyrighted material is encouraged in order to uphold the principles of fair use.</p>
+        </div>
+    </div>
+   </main>
+
+</body>
+    <script src="script.js"></script>
+</html>
